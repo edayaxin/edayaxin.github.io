@@ -216,6 +216,7 @@ margin:0 auto;
 
 .menuBtn:hover {
   color:#e7e7e7;
+  /*color: #4CAF50;*/
 }
 
 .menuBtn.active {

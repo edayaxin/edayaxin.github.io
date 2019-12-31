@@ -9,43 +9,24 @@
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
     <meta name="Description" content="Hello, welcome to Yaxin's site">
+    <script src="javascripts/jquery-3.4.1.min.js"></script>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        
-        <!-- <p>A Theme for GitHub Pages</p> -->
-        <div id="menu">
-          <h1>Yaxin Hu</h1>
-
-          <button class="menuBtn active" onclick="filterSelection('all')">
-          All
-          </button>
-
-          <button class="menuBtn" onclick="filterSelection('robot')">
-          Social Robotics
-          </button>
-
-          <button class="menuBtn" onclick="filterSelection('programming')">
-          Techie
-          </button>
-
-          <button class="menuBtn" onclick="filterSelection('art')">
-          Art
-          </button>
-
-          <button class="menuBtn" class="about">
-          About
-          </button>
-        </div>
-      </header>
+      <div id="header"></div>
+      <script type="text/javascript">
+        $(function(){
+          $("#header").load("header.html");
+        })
+      </script>
 
       <section>
         <div id="content">
-          <div id="project1" class="filterDiv robot all" onclick="window.open('robot.html','robotwindow');" style="cursor: pointer;">
+          <div id="project1" class="filterDiv robot all" onclick="openPage('robot.html');" style="cursor: pointer;">
             <img src="images/kuri_cover.png" alt="seed_dot" class="coverImg">
             <div class="coverOverlay">
               <div class="coverText">project 1</div>
@@ -108,6 +89,10 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    <script src="javascripts/style.js"></script>
+    <!-- <script src="javascripts/style.js"></script> -->
+    <!-- <script src="javascripts/header.js"></script> -->
+
+
   </body>
+
 </html>

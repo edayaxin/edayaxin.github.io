@@ -1,17 +1,45 @@
 filterSelection("all")
+
 function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  var x, i, url;
+
+  url=window.location.href;
+
+  if (url.indexOf("index.html")>=0) {
+    x = document.getElementsByClassName("filterDiv");
+
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      removeClass(x[i], "show");
+      // add show to targeted class
+      if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+    }    
+    var btnContainer = document.getElementById("menu");
+    var btns = btnContainer.getElementsByClassName("menuBtn");
+
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        if (current.length != 0) {
+          current[0].className = current[0].className.replace(" active", "");
+        }
+        this.className += " active";
+      });
+    }
+
+  } else {
+    window.open("index.html");
+    setCookie("filterDiv", c, 1);
   }
 }
 
+function openPage(filename) {
+  window.open(filename);
+}
+
 // Show filtered elements
-function w3AddClass(element, name) {
+function addClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -23,7 +51,7 @@ function w3AddClass(element, name) {
 }
 
 // Hide elements that are not selected
-function w3RemoveClass(element, name) {
+function removeClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -35,13 +63,32 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("menu");
-var btns = btnContainer.getElementsByClassName("menuBtn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+         }
+        if (c.indexOf(name)  == 0) {
+            return c.substring(name.length, c.length);
+         }
+    }
+    return "";
+}
+
+
+// alert(window.location.href.pathname.match(//([^/?#]+)$/i) || [,''])[1];
+// var myURL = parseURL(window.location.href)
+// alert(myURL.file)
+// alert(window.location.href)
+
+
