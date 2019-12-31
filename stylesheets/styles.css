@@ -212,6 +212,7 @@ margin:0 auto;
   /*cursor: pointer;*/
   color:#A9A9A9;
   font-size:12px;
+  background-color: transparent;
 }
 
 .menuBtn:hover {
