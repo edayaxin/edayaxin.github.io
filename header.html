@@ -22,15 +22,16 @@
           <button class="menuBtn">
           About
           </button>
-          <script>
+          <script src="javascripts/style.js">
           	$(function(){
 				var filter = getCookie("filterDiv");
 				filterSelection(filter);
-				var activeBtn = document.getElementById(filter);
-				activeBtn.className += " active";
+				if (filter) { 
+					var activeBtn = document.getElementById(filter);
+					activeBtn.className += " active";
+				}
 			});
 		  </script>
         </div>
+        <!-- <script src="javascripts/style.js"></script> -->
 </header>
-
-<script src="javascripts/style.js"></script>

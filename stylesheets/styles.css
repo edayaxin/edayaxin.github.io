@@ -9,11 +9,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
+  margin:20px 0 20px;
+}
+
+h3 {
+  white-space: pre-line;
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+  margin:20px 0 20px;
 }
 
 h1, h2, h3 {
@@ -183,10 +187,25 @@ small {
 
 hr {
   border:0;
+  
   background:#e5e5e5;
   height:1px;
-  margin:0 0 20px;
+  margin-before: 50em;
+  margin-after: 50em;
+  /*margin:50 50 50px;*/
 }
+
+
+/*hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}*/
 
 footer {
   width:270px;
@@ -379,4 +398,3 @@ display: grid;
 max-width: 400px;
 margin:0 auto;
 }
-
