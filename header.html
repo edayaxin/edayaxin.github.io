@@ -25,10 +25,13 @@
           <script>
           	$(function(){
 				var filter = getCookie("filterDiv");
-				filterSelection(filter);
+				
 				var activeBtn = document.getElementById(filter);
-				if (activeBtn.length != 0) {
+				if (activeBtn != null && activeBtn.length != 0) {
 					activeBtn.className += " active";
+					filterSelection(filter);
+				} else {
+					filterSelection("all");
 				}
 			});
 		  </script>
