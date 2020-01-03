@@ -3,7 +3,7 @@ function filterSelection(c) {
 
   url=window.location.href;
 
-  if (url.indexOf("index.html")>=0) {
+  if (url.indexOf("index.html")>=0 || url.indexOf(".html")<0) {
     x = document.getElementsByClassName("filterDiv");
 
     if (c == "all") c = "";
