@@ -26,8 +26,8 @@
           	$(function(){
 				var filter = getCookie("filterDiv");
 				filterSelection(filter);
-				if (filter) { 
-					var activeBtn = document.getElementById(filter);
+				var activeBtn = document.getElementById(filter);
+				if (activeBtn.length != 0) {
 					activeBtn.className += " active";
 				}
 			});
