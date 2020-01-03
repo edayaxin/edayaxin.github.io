@@ -28,10 +28,12 @@ function filterSelection(c) {
       });
     }
 
-  } else {
+  } 
+}
+
+function subFilterSelection(c){
     window.open("index.html");
     setCookie("filterDiv", c, 1);
-  }
 }
 
 function openPage(filename) {
