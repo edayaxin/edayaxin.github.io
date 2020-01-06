@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Social Robotics</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="javascripts/style.js"></script>
+    <script src="javascripts/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <div id="header"></div>
+      <script type="text/javascript">
+        $(function(){
+          $("#header").load("sub_header.html");
+        })
+      </script>
+
+      <section>
+
+        <div class="banner" style="background:url(images/helping_robot/cozmo_banner.jpg);">
+          <h2>Helping Robots</h2>
+          <h3>Research on bystanders' willingness to help a Cozmo robot</h3>
+        </div>
+
+        <p style="font-style: italic; font-weight: 500; font-size:14px; color:#000000; margin:100px 0 0; text-align: center;">
+          Research Question</p> 
+        <p style="font-style: italic; font-size:14px; color:#000000; margin:0 0 50px; text-align: center;">
+          What is the effect of physical proximity and asking etiquette on people’s willingness to help a Cozmo robot when it is low on battery?
+        </p>
+
+        <h3>
+          Introduction
+        </h3>
+
+        <p>
+         In this research, we studied the bystanders’ willingness to help a Cozmo robot when it requests help in a social context. We summarized prior work related to the role of human in human-robot interaction, problems that robots may encounter, and phrases or behaviors for asking. The background work inspired us to come up with two social factors that we think may have an impact on bystanders’ willingness to help: robot proximity and etiquette of asking. After performing a between-subjects design on 12 participants, only 1 participant helped Cozmo with his request, as well as another random passerby who provided assistance to Cozmo. Based on our survey results, most participants understood Cozmo’s request and were willing to help but did not feel they should intervene. We discuss how various environmental conditions of the study may have led to these results as well as propose future study redesigns to address these limitations. 
+
+        </p>
+
+        <p style="font-weight: 600; text-align: center; margin:50px 0 0;">Independent Variables</p>
+        <div class="narrowColumn2">
+          <div>
+            <li>Robot proximity to participants</li>
+          </div>
+          <div>
+            <li>Cozmo’s way of asking (direct/indirect)</li>
+          </div>
+        </div>
+
+        <p style="font-weight: 600; text-align: center; margin:0 0 0;">Dependent Variables</p>
+        <div style="text-align: center; margin: 10px 0 50px"><li>Participants’ willingness to help Cozmo</li></div>
+
+        <h3>
+          Experiment Setup
+        </h3>
+        <img src="images/helping_robot/experiment_setup.png" alt="robot design">
+        <img src="images/helping_robot/experiment_real_setup.png" alt="robot design">
+
+        <p>  
+        We conducted the experiment in an open lab space of the Human-Computer Interaction Institute in Carnegie Mellon University using the Cozmo robot, an open source robot platform with easy access for students. In this experiment we teleoperate the robot using there remote_control_cozmo.py example program from the Cozmo SDK. <br><br>
+
+        We decorated a table in the lab to create an environment for Cozmo. The table was filled with Cozmo cubes and other small toys indicating a playful, exploratory environment. A sign reading "Cozmo Corner" was hung above the table to give the impression that the space is an interactive installation that exists as part of the HCII space. We placed Cozmo’s charger on the same table but facing towards the wall, so the charger was inaccessible for Cozmo. This way, Cozmo cannot drive himself onto the charger when he needs to charge, and he must ask the participant to help to either flip the charger around in a suitable direction or have Cozmo placed directly on the charger.
+        </p>
+
+        <h3>
+          Experiment Procedure
+        </h3>
+        <img src="images/helping_robot/procedure.png" alt="procedure">
+        <p>  
+        First, we invited the participant to the table next to Cozmo’s corner. Instead of introducing the experiment as Human-Robot Interaction research, we told them the experiment was a word puzzle study. Participants were told to fill out a questionnaire about fruits and a word search, thus shifting the focus of the study away from Cozmo to ensure genuine bystander behavior. While participants worked on the word search, we teleoperated Cozmo to drive around his environment and "play." After two minutes of doing the word search, we teleoperated Cozmo to ask for help, using the Close/Far and Direct/Indirect conditions described above. If the participant didn’t respond to the request, Cozmo would wait for 30 seconds and ask again. We stopped the experiment in the cases when either the participant helps Cozmo or Cozmo asked for help three times. After the study, the participants finish a poststudy survey with demographic questions and the following Cozmo-specific questions.
+        </p>
+
+
+        <h3>
+          Result Analysis
+        </h3>
+        <img src="images/helping_robot/cozmo_result.png" alt="procedure">
+        <p>  
+
+        While most participants did not help Cozmo, they were aware of Cozmo’s request. The most common reasons participants cited for why they did not choose to help Cozmo include: <br><br>
+        "I was focusing on the task at hand" (10 /12 participants)<br>
+        "I wasn’t sure he was part of the study" (6/12 participants)<br>
+        "I wasn’t sure how to help him / don’t know how robots work" (6/12 participants)<br>
+        "I didn’t want to interfere with someone else’s robot" (3/12 participants)<br>
+        </p>
+
+        <h3>
+          Discussion
+        </h3>
+        <p>
+        As robots become more ubiquitous in human settings, they will have to become less dependent on trained person such as supervisors or operators for troubleshooting because of problems of scalability. It is important to design ways for the robot to ask bystanders for help when it gets stuck and needs external assistance. Our research was a foray into how different social metrics like proximity and politeness have an effect on whether people are more willing to help a robot in need. Despite our results being inconclusive, there were several findings indicating that participants understand Cozmo needed assistance, and we gained some insights on how to design future experiments to avoid the confounding variables present in this work.
+        </p>
+
+
+      </section>
+
+
+      <footer>
+        <p><small>github <a href="https://github.com/edayaxin">edayaxin</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+
+  </body>
+</html>

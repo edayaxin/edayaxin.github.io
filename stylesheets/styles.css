@@ -1,23 +1,30 @@
 body {
   background-color: #fff;
   padding:50px;
-  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  /*padding: 0;*/
+  font: 12px/1.5 "Titillium Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   /*font: 14px/1.5 "Comic Sans";*/
   color:#595959;
-  font-weight:400;
+  font-weight:300;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:20px 0 20px;
+  /*margin:20px 0 20px;*/
 }
 
+h1 {
+  margin: 20px 0 20px;
+}
+
+
 h3 {
-  white-space: pre-line;
+  margin:50px 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin:20px 0 20px;
+  margin:0 0 20px;
 }
 
 h1, h2, h3 {
@@ -32,12 +39,37 @@ h1 {
 
 h2 {
   color:#393939;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 24px;
+  text-align:left;
+  /*color:#ffffe6;*/
 }
+
+.banner {
+/*  position: absolute;
+  top:0;*/
+/*  float: right;
+  display: inline-block;*/
+
+  color:#ffffe6;
+  font-weight: 300;
+  text-align:left;
+  margin:-50px;
+  width: calc(100% + 200px);
+  /*width: calc(100% - 10px);*/
+  /*background: #1abc9c;*/
+  padding: 60px;
+  
+}
+
 
 h3, h4, h5, h6 {
   color:#494949;
   font-weight: 500;
+}
+
+li {
+    list-style: square;
 }
 
 a {
@@ -186,26 +218,17 @@ small {
 }
 
 hr {
-  border:0;
   
   background:#e5e5e5;
-  height:1px;
-  margin-before: 50em;
-  margin-after: 50em;
-  /*margin:50 50 50px;*/
+  /*height:0.5px;*/
+  display: block;
+  border-style: inset;
+  border-width: 0.5px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-
-
-/*hr { 
-    display: block;
-    margin-before: 0.5em;
-    margin-after: 0.5em;
-    margin-start: auto;
-    margin-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
-}*/
 
 footer {
   width:270px;
@@ -282,16 +305,16 @@ grid-gap: 30px;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CB0;
+  background-color: #c0ebd7;
 }
 
 .filterDiv:hover .coverOverlay {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .coverText {
-  color: white;
-  font-size: 20px;
+  color: #161823;
+  font-size: 32px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -301,7 +324,7 @@ grid-gap: 30px;
   text-align: center;
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 800px) {
 
   div.wrapper {
     width:auto;
@@ -336,7 +359,7 @@ grid-gap: 30px;
   }
 }
 
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 480px) {
   body {
     word-wrap:break-word;
   }
@@ -362,7 +385,7 @@ grid-gap: 30px;
 
 }
 
-@media print, screen and (max-width: 480px) {
+@media print, screen and (max-width: 320px) {
   body {
     padding:15px;
   }
@@ -396,5 +419,38 @@ grid-auto-rows: minmax(150px, auto);
 grid-gap: 20px;
 display: grid;
 max-width: 400px;
+margin:50px auto;
+}
+
+.narrowColumn2 { 
+grid-template-columns:repeat(2,1fr);
+grid-auto-rows: minmax(30px, auto);
+grid-gap: 20px;
+display: grid;
+max-width: 600px;
+margin:10px auto;
+text-align: center;
+}
+
+.column4 { 
+grid-template-columns:repeat(4,1fr);
+grid-auto-rows: minmax(30px, auto);
+grid-gap: 10px;
+display: grid;
+max-width: 600px;
 margin:0 auto;
+font-size:9pt;
+text-align: center;
+font-family: "Titillium Web", "Times New Roman", Times, serif;
+
+/*font-style: italic;*/
+}
+
+.menuBtn{
+  font-family: "Titillium Web","Times New Roman", Times, serif;
+  font-size:9pt;
+}
+
+.coverText {
+  font-size:9pt;
 }
