@@ -30,12 +30,12 @@ function filterSelection(c) {
 }
 
 function subFilterSelection(c){
-    window.open("index.html");
     setCookie("filterDiv", c, 1);
+    window.open("index.html", '_self').close();
 }
 
 function openPage(filename) {
-  window.open(filename);
+  window.open(filename,'_self').close();
 }
 
 // Show filtered elements
@@ -84,6 +84,66 @@ function getCookie(cname) {
     }
     return "";
 }
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+var slideDotIndex = 1;
+showDotSlides(slideDotIndex);
+
+// Next/previous controls
+function plusDotSlides(n) {
+  showDotSlides(slideDotIndex += n);
+}
+
+// Thumbnail image controls
+function currentDotSlide(n) {
+  showDotSlides(slideDotIndex = n);
+}
+
+function showDotSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("dotSlides");
+  var dots = document.getElementsByClassName("dot_dot");
+  if (n > slides.length) {slideDotIndex = 1}
+  if (n < 1) {slideDotIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideDotIndex-1].style.display = "block";
+  dots[slideDotIndex-1].className += " active";
+}
+
 
 
 // alert(window.location.href.pathname.match(//([^/?#]+)$/i) || [,''])[1];
