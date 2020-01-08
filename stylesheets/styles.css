@@ -45,6 +45,7 @@ h2 {
   /*color:#ffffe6;*/
 }
 
+
 .banner {
 /*  position: absolute;
   top:0;*/
@@ -70,6 +71,20 @@ h2 {
   /*width: calc(100% - 10px);*/
   /*background: #1abc9c;*/
   padding-bottom: 80px;
+}
+
+.techie_area_type {
+  color:#80ffbf;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Roboto, BlinkMacSystemFont, "Segoe UI";
+  font-style: italic;
+}
+
+.techie_skill_type {
+  font-weight: 700;
+  font-size: 14px;
+  /*color:#c7d1cc;*/
 }
 
 h3, h4, h5, h6 {
@@ -247,6 +262,12 @@ footer {
   text-align: center;
   -webkit-font-smoothing:subpixel-antialiased;
 }
+
+b {
+  font-weight: 600;
+}
+
+
 
 #content { 
 grid-template-columns:repeat(2,1fr);
