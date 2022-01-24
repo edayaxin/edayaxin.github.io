@@ -48,6 +48,10 @@ h2 {
   /*color:#ffffe6;*/
 }
 
+.text-medium {
+  font-weight: 600;
+  color:#252525;
+}
 
 .banner {
 /*  position: absolute;
@@ -120,7 +124,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:900px;
+  width:1000px;
   margin:0 auto;
 }
 
@@ -235,7 +239,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:700px;
   float:right;
   padding-bottom:50px;
 }
@@ -611,4 +615,28 @@ font-family: "Titillium Web", "Times New Roman", Times, serif;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+/* Create two equal columns that floats next to each other */
+.paper-citation {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  /* height: 300px; Should be removed. Only for demonstration */
+}
+.paper-video {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  /* height: 300px; Should be removed. Only for demonstration */
+  margin: auto;
+  display: block;
+  
+}
+/* Clear floats after the columns */
+.paper-row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
