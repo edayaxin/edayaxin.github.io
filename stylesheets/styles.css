@@ -246,6 +246,9 @@ section {
 
 small {
   font-size:11px;
+  /* color:rgb(169, 169, 169); */
+  font-weight: 200;
+  font-style: normal;
 }
 
 hr {
