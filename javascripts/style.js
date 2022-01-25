@@ -35,7 +35,9 @@ function subFilterSelection(c){
 }
 
 function openPage(filename) {
-  window.open(filename,'_self').close();
+  // window.open(filename,'_self').close();
+  window.open(filename,'_self');
+
 }
 
 // Show filtered elements
