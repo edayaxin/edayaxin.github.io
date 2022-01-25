@@ -2,20 +2,20 @@
 <header>
         <div id="menu">
           <h1>Yaxin Hu</h1>
-          <button class="menuBtn" id="all" onclick="filterSelection('all')">
+          <div class="menuBtn" id="all" onclick="filterSelection('all')">
           All
-          </button>
+          </div>
 
-          <button class="menuBtn" id="research" onclick="openPage('research.html');">
+          <div class="menuBtn" id="research" onclick="openPage('research.html');">
             Research
-            </button>
-          <button class="menuBtn" id="art" onclick="filterSelection('art')">
+            </div>
+          <div class="menuBtn" id="art" onclick="filterSelection('art')">
           Others
-          </button>
+          </div>
 
-          <button class="menuBtn" onclick="openPage('about.html'); filterSelection('about');">
+          <div class="menuBtn" onclick="openPage('about.html'); filterSelection('about');">
           About
-          </button>
+          </div>
           <script>
           	$(function(){
               var filter = getCookie("filterDiv");

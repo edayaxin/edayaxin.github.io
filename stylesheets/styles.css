@@ -308,7 +308,7 @@ margin:0 auto;
 display: grid;
 margin:0 auto;
 grid-gap: 30px;
-/*background: #100;*/
+text-align: center;
 }
 
 #content {

@@ -20,7 +20,10 @@
       <div id="header"></div>
       <script type="text/javascript">
         $(function(){
-          $("#header").load("sub_header.html");
+          $("#header").load("sub_header.html",  function() {
+            document.getElementById("about").className += " active";
+           }
+          )
         })
       </script>
 
