@@ -18,14 +18,14 @@
           </button>
           <script>
           	$(function(){
-				var filter = getCookie("filterDiv");
-				var activeBtn = document.getElementById(filter);
-				if (activeBtn && activeBtn.length != 0) {
-					activeBtn.className += " active";
-					filterSelection(filter);
-				} else {
-					filterSelection("all");
-				}
+              var filter = getCookie("filterDiv");
+              var activeBtn = document.getElementById(filter);
+              if (activeBtn && activeBtn.length != 0) {
+                activeBtn.className += " active";
+                filterSelection(filter);
+              } else {
+                filterSelection("all");
+              }
 			});
 		  </script>
         </div>
