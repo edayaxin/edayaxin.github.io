@@ -291,19 +291,20 @@ margin:0 auto;
 .menuBtn {
   border:none;
   outline: none;
-  /*cursor: pointer;*/
-  color:#A9A9A9;
-  font-size:12px;
+  cursor: pointer;
+  color:#919090;
+  font-size:16px;
+  font-family: "Times New Roman", Times, serif;
   background-color: transparent;
 }
 
+
 .menuBtn:hover {
-  color:#e7e7e7;
-  /*color: #4CAF50;*/
+  color:#80ffbf;
 }
 
 .menuBtn.active {
-  color:#82ffb7;
+  color:#000000;
   background: none;
 }
 
@@ -498,10 +499,6 @@ font-family: "Times New Roman", Times, serif;
 /*font-style: italic;*/
 }
 
-.menuBtn{
-  font-family: "Times New Roman", Times, serif;
-  font-size:11pt;
-}
 
 /* CSS for slideshow*/
 
