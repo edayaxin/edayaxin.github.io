@@ -31,7 +31,7 @@ function filterSelection(c) {
 
 function subFilterSelection(c){
     setCookie("filterDiv", c, 1);
-    window.open("index.html", '_self').close();
+    window.open("index.html", '_self');
 }
 
 function openPage(filename) {
