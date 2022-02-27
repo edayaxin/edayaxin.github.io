@@ -623,6 +623,8 @@ font-family: "Times New Roman", Times, serif;
   padding: 10px;
   /* height: 300px; Should be removed. Only for demonstration */
 }
+
+
 .paper-video {
   float: left;
   width: 40%;
@@ -630,8 +632,14 @@ font-family: "Times New Roman", Times, serif;
   /* height: 300px; Should be removed. Only for demonstration */
   margin: auto;
   display: block;
-  
 }
+
+.paper-video img {
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
 /* Clear floats after the columns */
 .paper-row:after {
   content: "";
