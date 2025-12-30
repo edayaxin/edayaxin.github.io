@@ -3,113 +3,278 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Yaxin Hu | HRI | A11y</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
-    <meta name="Description" content="Hello, welcome to Yaxin's site">
-    <script src="javascripts/jquery-3.4.1.min.js"></script>
-
+    <link rel="icon" type="image/x-icon" href="assets/headshot_circle.png">
+    <title>Yaxin | Human Robot Interaction </title>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
     <div class="wrapper">
-      <div id="header"></div>
-      <script type="text/javascript">
-        $(function(){
-          $("#header").load("header.html");
-        })
-      </script>
+      <header>
+        <div style="margin:0 5px 10px; width: 150px; height: auto;">
+            <img src="assets/headshot_circle.png" alt="Yaxin Hu in a blue jacket">
+        </div>
+        <h1>Yaxin Hu <span style="font-size: small; font-weight: 200;">&#128226; ya.shin hu</span></h1>
+        
+
+        <p>Ph.D. Candidate at the University of Wisconsin - Madison</p>
+        <p>
+          <a href="https://scholar.google.com/citations?user=ZKSQUgwAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp/&nbsp
+          <a href="https://www.linkedin.com/in/yaxinhu/">LinkedIn</a>  &nbsp/&nbsp
+          <a href="assets/Yaxin_HU_CV_Academic.pdf">CV</a>
+        <p>
+        <p>yaxin.hu at wisc dot edu</p>
+      </header>
 
       <section>
-        <div id="content">
+        <p style="margin:0 0 25px; font-weight: 300;">
+          I am a Ph.D. candidate in Computer Science with a minor in Communication Arts at <a class="org" href="https://cdis.wisc.edu/">UW-Madison</a> advised by <a class="ppl" href="http://pages.cs.wisc.edu/~bilge/">Prof. Bilge Mutlu</a>. 
+          My research lies at the intersection of <span style="font-weight: 500; background-color: #f2edff;">human robot interaction (HRI), embodied AI, and accessibility</span>. 
+          I study intelligent robots that support people's inclusive engagement with the social world and the physical world, and understand how these robots can be meaningfully integrated into human environments.
+        </p>
+        <p style="font-weight: 300; color: #b180cf">I'm on the 2025-2026 job market looking for academic and industry positions!</p>
+        <h2>News</h2>
+        <!-- I am a member of <a class="org" href="https://peopleandrobots.wisc.edu/">People and Robots Laboratory</a>. -->
+        <!-- <p style="font-size: small;">
+        Sep. 28, 2025: Presented our paper NarraGuide at UIST 2025 at Busan, Korea <br> 
+        Sep. 15, 2025: Started research visit at Singapore Management University hosted by Professor Tony Tang<br>
+        Jul. 1, 2025: Started summer internship at Miraikan (Accessibility Lab) in Tokyo, Japan <br> 
+        Mar. 3, 2025: Presented our paper Robot for Place Attachment at HRI 2025 at Melbourne, Australia <br> 
+        Oct. 28, 2024: Presented our paper SMART-TBI at ASSETS 2024 at St. Johns, Canada <br>  
+        Aug. 29, 2024: Passed my preliminary exam! <br> 
+        Jun. 1, 2023: Started research visit at Big Lab at Carnegie Mellon University hosted by Professor Jeffrey P. Bigham <br> 
+        Sep. 1, 2020: Started my Ph.D. journey at UW-Madison
+        </p> -->
+        <div style="font-size: small; font-weight: 300;">
+          <ul>
+            <!-- <li>&#x1f1e8;&#x1f1f3; Attended IROS 2025 in Hangzhou, China</li>
+            <li>&#127472;&#127479; Presented NarraGuide at UIST 2025 at Busan, Korea</li> -->
+            <li>Started my visit at <a class="org" href="https://computing.smu.edu.sg/">Singapore Management University</a> &#x1f1f8;&#x1f1ec; hosted by <a class="ppl" href="https://hcitang.github.io/">Prof. Tony Tang</a></li>
+            <li>Finished a research internship at <a class="org" href="https://www.miraikan.jst.go.jp/en/lab/AccessibilityLab/">the National Museum of Emerging Science and Innovaion (Miraikan)</a> &#x1F1EF;&#x1F1F5;  hosted by <a class="ppl" href="https://research.ibm.com/people/hironobu-takagi">Dr. Hironobu Takagi</a> and <a class="ppl" href="https://www.ibm.com/history/chieko-asakawa">Dr. Chieko Asakawa</a></li>
+            <li>Finished a research internship at <a class="org" href="https://hcii.cmu.edu/">CMU HCII</a> &#127482;&#127480; advised by <a href="https://ykotturi.github.io/"> Prof. Yasmine Kotturi</a> and <a class="ppl" href="https://www.cs.cmu.edu/~jbigham/">Prof. Jeffrey P. Bigham</a></li>
+            <li>Graduated from <a class="org" href="https://www.architecture.cmu.edu/computational-design">CMU MSCD</a> advised by <a class="ppl" href="https://hennyadmoni.com/">Prof. Henny Admoni</a></li>
+            <li>Graduated with first class honour from <a class="org" href="https://www.cse.cuhk.edu.hk/">CUHK</a> &#127469;&#127472; advised by <a class="ppl" href="https://ttwong12.github.io/">Prof. Tien-Tsin Wong</a></li>
+          </ul>
+        </div>
 
-          <div id="project6" class="filterDiv robot all" onclick="openPage('research.html#hri2025');" style="cursor: pointer;">
-            <img src="images/hri2025cover.jpg" style="opacity: 0.8; filter: saturate(70%);" alt="Cover image for Paper: Designing Teleprsence Robots to Support Place Attachment" class="coverImg">
-            <div class="coverOverlay">
-              <div class="coverText">Telepresence Robots, Place Attachment<br>(HRI 2025)</div>
-            </div>
-          </div>
+        <h2>Publication</h2>        
+        <div id="myBtnContainer" style="font-weight:200; margin-bottom: 20px; cursor: pointer;">
+          <span class="btn active" onclick="filterSelection('all')">All</span> &nbsp | &nbsp
+          <span class="btn" onclick="filterSelection('hri')">Human Robot Interaction</span> &nbsp | &nbsp
+          <span class="btn" onclick="filterSelection('ca')">Conversational Agent</span>  &nbsp |  &nbsp
+          <span class="btn" onclick="filterSelection('at')">Accessibility</span>
+          <hr/>
+        </div>
+        
+        <div class="row filterDiv hri">
+                <div class="left-col">
+                    <img src="assets/hri2025attachment.PNG" alt="Remote robot on a university campus.">
+                </div>
+                <div class="right-col">
+                    <text><span style="color: #222;"><em>Remote Robot for Place Attachment</em></span> 
+                      </br>
+                        <span class="conf">HRI 2025</span> <a href=https://dl.acm.org/doi/abs/10.5555/3721488.3721522>paper</a> 
+                        |
+                         <a href="https://youtu.be/81KtXpkY_bc?si=OidDvsyIgy3pzclj">video</a>
+                    </text>   
+                    <hr/>
+                    <text>
+                     Multi-party interactions in robotic telepresence to promote place attachment. 
+                     Users were be guided by a human guide or a virtual agent, and experienced the environment individually or with other users.
+                    </text>
+                </div>
+        </div>
 
-          <div id="project5" class="filterDiv robot all" onclick="openPage('research.html#dis2024');" style="cursor: pointer;">
-            <img src="images/dis2023cover.jpg" style="opacity: 0.8; filter: saturate(70%);" alt="Cover image for Paper: This really lets us see the entire world: Designing a conversational telepresence robot for homebound older adults" class="coverImg">
-            <div class="coverOverlay">
-              <div class="coverText">Conversational Telepresence Robot, Homebound<br>(DIS 2024)</div>
-            </div>
-          </div>
-
-          <div id="project4" class="filterDiv robot all" onclick="openPage('research.html#assets2023sec');" style="cursor: pointer;">
-            <img src="images/assets2023cover.png" alt="Cover image for Paper: Investigating Day-to-day Experiences with Conversational Agents by Users with Traumatic Brain Injury" class="coverImg">
-            <div class="coverOverlay">
-              <div class="coverText">Conversational Agents, People with TBI<br>(ASSETS 2023)</div>
-            </div>
-          </div>
-
-          <div id="project3" class="filterDiv robot all" onclick="openPage('research.html#chi2022sec');" style="cursor: pointer;">
-            <img src="images/chi2022.png" alt="Cover Image for Paper: Polite or Direct? Conversation Design of a Smart Display for Older Adults Based on Politeness Theory" class="coverImg">
-            <div class="coverOverlay">
-              <div class="coverText">Conversation Design, Politeness Theory<br>(CHI 2022)</div>
-            </div>
-          </div>
-
-
-          
-          <div id="project2" class="filterDiv robot all" onclick="openPage('research.html#ica2022sec');" style="cursor: pointer;">
-            <img src="images/misty_image.jpg" alt="Cover Image for Extended Abstract: A Pilot Study of Patients’ Self-disclosure and Privacy Concerns to a Conversational Social Robot in Hospitals" class="coverImg">
-            <div class="coverOverlay">
-              <div class="coverText">Conversation Design, Social Robots<br>(ICA 2022)</div>
-            </div>
-          </div>
-
-          <div id="project1" class="filterDiv robot all" onclick="openPage('research.html#dis2021sec');" style="cursor: pointer;">
-            <img src="images/kuri_cover.png" alt="Cover Image for Paper: Exploring the Role of Social Robot Behaviors in a Creative Activity" class="coverImg">
-            <div class="coverOverlay">
-              <div class="coverText">Social Robots, Creativity Support<br>(DIS 2021)</div>
-            </div>
-          </div>
-          
-          <div class="filterDiv art all" onclick="openPage('multimedia_art.html');" style="cursor: pointer;">
-              <img src="images/multimedia.png" alt="Cover Image for Section: Multimedia Art Work" class="coverImg">
-              <div class="coverOverlay">
-                <div class="coverText">Multimedia</div>
-              </div>
-          </div>
-
-
-        <div class="filterDiv art all" onclick="openPage('painting.html');" style="cursor: pointer;">
-            <img src="images/painting.png" alt="Cover Image for Section: Painting and Drawing" class="coverImg">
-            <div class="coverOverlay">
-              <div class="coverText">Painting / Drawing</div>
-            </div>
+        <div class="row filterDiv hri">
+                <div class="left-col">
+                    <img src="assets/uist2025narrasm.png" alt="A robotic system built with an LLM agent and a semantic map">
+                </div>
+                <div class="right-col">
+                    <text><span style="color: #222;"><em>NarraGuide: an LLM-based Mobile Robot</em></span> 
+                      </br>
+                        <span class="conf">UIST 2025</span> <a href=https://dl.acm.org/doi/10.1145/3746059.3747697>paper</a> 
+                        |
+                         <a href=https://dl.acm.org/doi/10.1145/3746059.3747697>video</a>
+                    </text>   
+                    <hr/>
+                    <text>
+                    A fully autonomous robotic system that provides LLM-powered narrative guidance for users to explore and learn about a remote geology museum through a dialogue-based interface. 
+                    </text>
+                </div>
         </div>
 
 
-        <div class="filterDiv art all" onclick="openPage('writing.html');" style="cursor: pointer;">
-          <img src="images/lake1.jpg" alt="Cover Image for Section: Art History Writing" class="coverImg">
-          <div class="coverOverlay">
-            <div class="coverText">Art History</div>
-          </div>
-      </div>
+        <div class="row filterDiv hri ca">
+                <div class="left-col">
+                    <img src="assets/dis2024tele.png" alt="A person sitting in a wheelchair in front of a monitor and talking to a remote conversational telepresence robot.">
+                </div>
+                <div class="right-col">
+                    <text><span style="color: #222;"><em>Conversational Robot for Homebound Older Adults</em></span> 
+                      </br>
+                        <span class="conf">DIS 2024</span> <a href="https://dl.acm.org/doi/pdf/10.1145/3643834.3660710">paper</a> 
+                        |
+                         <a href="https://youtu.be/XlU7V-YDz_8?si=3dIjqEgx07ePfuxB">video</a>
+                    </text>   
+                    <hr/>
+                    <text>
+                    Explore the design and use of conversational telepresence robots to help homebound older adults interact with the external world. 
+                    </text>
+                </div>
+        </div>
+
+        <div class="row filterDiv at">
+                <div class="left-col">
+                    <img src="assets/assets2024teaser.png" alt="A person seeing a social media webpage with five accessibility aids">
+                </div>
+                <div class="right-col">
+                    <text><span style="color: #222;"><em>SMART-TBI</em></span> 
+                      </br>
+                        <span class="conf">ASSETS 2024</span> <a href=https://dl.acm.org/doi/abs/10.1145/3663548.3675641>paper</a> 
+                    </text>   
+                    <hr/>
+                    <text>
+                    Social Media Accessibility and Rehabilitation Toolkit for people with traumatic brain injury (SMART-TBI). The toolkit was designed to address the cognitive and communicative needs of individuals with TBI. 
+                    </text>
+                </div>
+        </div>
+
+        <div class="row filterDiv at">
+                <div class="left-col">
+                    <img src="assets/chi2023tbi.png" alt="A sketch from the participatory design session.">
+                </div>
+                <div class="right-col">
+                    <text><span style="color: #222;"><em>Social Media for People with TBI</em></span> 
+                      </br>
+                        <span class="conf">CHI 2023</span> <a href=https://dl.acm.org/doi/pdf/10.1145/3597638.3608385>paper</a> 
+                    </text>   
+                    <hr/>
+                    <text>
+                    Conceptualize tools to address challenges in accessing Facebook with 10 adults with TBI through a participatory design study.  
+                    </text>
+                </div>
+        </div>
 
 
-      </div>
+        <div class="row filterDiv at">
+                <div class="left-col">
+                    <img src="assets/assets2023.png" alt="A person sitting in a sofa and talking to a conversational agent speaker.">
+                </div>
+                <div class="right-col">
+                    <text><span style="color: #222;"><em>Conversational Agent for People with TBI</em></span> 
+                      </br>
+                        <span class="conf">ASSETS 2023</span> <a href=https://dl.acm.org/doi/pdf/10.1145/3597638.3608385>paper</a> 
+                        <!-- |
+                         <a href=https://youtu.be/81KtXpkY_bc?si=OidDvsyIgy3pzclj>video</a> -->
+                    </text>   
+                    <hr/>
+                    <text>
+                    Study TBI-related use of conversatioanl agents through a four-week at-home study to investigate use patterns, challenges, and design requirements.
+                    </text>
+                </div>
+        </div>
+
+
+        <div class="row filterDiv ca">
+                <div class="left-col">
+                    <img src="assets/chi2022.png" alt="An older adult points to the screen of a smart display.">
+                </div>
+                <div class="right-col">
+                    <text><span style="color: #222;"><em>Conversation Design for Older Adults</em></span> 
+                      </br>
+                        <span class="conf">CHI 2022</span> <a href=https://dl.acm.org/doi/abs/10.1145/3491102.3517525>paper</a> 
+                        |
+                         <a href=https://youtu.be/6h0jx0vcb7Y>video</a>
+                    </text>   
+                    <hr/>
+                    <text>
+                    Designed conversational agents on for older adults based on politeness theory. Field studies revealed user personas with varied preferences in system politeness and user agency in the interaction. 
+                    </text>
+                </div>
+        </div>
+
+        <div class="row filterDiv hri">
+                <div class="left-col">
+                    <img src="assets/dis2021/thumb_kuri.gif" alt="An gif animation where a human and a robot take turns to create a tangram.">
+                </div>
+                <div class="right-col">
+                    <text><span style="color: #222;"><em>Social Robot for Creativity</em></span> 
+                      </br>
+                        <span class="conf">DIS 2021</span> <a href=https://dl-acm-org.ezproxy.library.wisc.edu/doi/10.1145/3461778.3462116>paper</a> 
+                        |
+                         <a href=https://youtu.be/9aBqJzGMKm4>video</a>
+                    </text>   
+                    <hr/>
+                    <text>
+                    A mobile robot with social expressions collaborated with human in a creative activity where the robot and human took turns to create compositions using tangram pieces in an augmented projection space. 
+                    </text>
+                </div>
+        </div>
+
+      <section>
+		    <p style="font-size: 10px;">This page is a modified version of <a href="https://github.com/orderedlist/minimal">orderedlist/minimal</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA3.0 license</a>). Template courtesy to <a href="https://dporfirio.github.io/">David Porfirio</a>.</p>
+	    </section>
       </section>
-
-      <footer>
-        <!-- <p><small>github <a href="https://github.com/edayaxin">edayaxin</a></small></p> -->
-        <p><a href="https://scholar.google.com/citations?user=ZKSQUgwAAAAJ&hl=en&oi=ao">Google Scholar</a></p>
-         
-        <p><a href="images/yaxin_hu_resume.pdf">Resume</a></p>
-      </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    <!-- <script src="javascripts/style.js"></script> -->
-    <!-- <script src="javascripts/header.js"></script> -->
 
+    <script>
+        filterSelection("all")
 
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("filterDiv");
+          
+          // If "all" is selected, clear the filter parameter
+          if (c == "all") c = "";
+          
+          for (i = 0; i < x.length; i++) {
+            // 1. Hide everything by default
+            w3RemoveClass(x[i], "show"); 
+            
+            // 2. If the item has the class we want, add "show"
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+          // IMPORTANT: This ensures the element is visible
+          element.style.display = ""; 
+        }
+
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+          // IMPORTANT: This hides the element
+          element.style.display = "none"; 
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+  </script>
   </body>
-
 </html>
