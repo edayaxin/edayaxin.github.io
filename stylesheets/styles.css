@@ -37,13 +37,14 @@ h3, h4, h5, h6 {
 
 a {
   /* color:#39c; */
-  color: #b087de; 
+  color: #9f6ed7; 
   text-decoration:none;
 }
 
 a:hover {
   /* color:#069; */
   color: #000000;
+  background-color: #f2edff;
 }
 
 a small {
@@ -309,21 +310,22 @@ footer {
 /* Style for the active filter button (makes it bold or different color) */
 .btn.active {
     font-weight: 300;
-    color: #a581cf;  
+    color: #9f6ed7;  
     background-color: #f2edff;
 }
 .btn:hover {
-    color: #a581cf;
+    color: #9f6ed7;
 }
 
 .ppl {
-  color: #b087de;
-  font-weight: 300;
+  color: #9f6ed7;
+  font-weight: 350;
 }
 
 .ppl:hover {
   color: #000000;
   font-weight: 300;
+  background-color: #f2edff;
 }
 
 .org {
