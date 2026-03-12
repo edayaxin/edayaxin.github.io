@@ -331,6 +331,7 @@ footer {
 .org {
   color: #505050;
   font-weight: 300;
+  /* font-style: italic; */
   text-decoration: underline;
 }
 
